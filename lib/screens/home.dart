@@ -102,7 +102,7 @@ class _HomeState extends State<Home> {
                   ),
               ),
               SizedBox(height: 30,),
-              Text('Trending', style: GoogleFonts.lato(fontSize: 14, fontWeight: FontWeight.bold),),
+              Text('Trending', style: GoogleFonts.lato(fontSize: 16, fontWeight: FontWeight.bold),),
               SizedBox(height: 20,),
               Padding(
                 padding: const EdgeInsets.only(right: 30),
@@ -131,7 +131,7 @@ class _HomeState extends State<Home> {
                   ),
               ),
               SizedBox(height: 20,),
-              Text('Categories', style: GoogleFonts.lato(fontSize: 14, fontWeight: FontWeight.bold),),
+              Text('Categories', style: GoogleFonts.lato(fontSize: 16, fontWeight: FontWeight.bold),),
               SizedBox(height: 20,),
               Container(
                 width: 315,

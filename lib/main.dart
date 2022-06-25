@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vacation_expert/screens/creative.dart';
 import 'package:vacation_expert/screens/home.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.amber,
         scaffoldBackgroundColor: const Color.fromARGB(255, 255, 250, 250),
       ),
-      home: Home(),
+      home: Creative(),
     );
   }
 }
