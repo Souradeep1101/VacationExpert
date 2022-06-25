@@ -54,6 +54,28 @@ class _HomeState extends State<Home> {
         ),
       ),
       appBar: AppBar(
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 20),
+            child: Container(
+              height: 42,
+              width: 42,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+               border: Border.all(
+                 color: Colors.amber,
+                 width: 2,
+               ),
+               // borderRadius: BorderRadius.circular(100),
+                image: DecorationImage(
+                  image: AssetImage('assets/images/my_profle_pic.jpg'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          )
+        ],
+        iconTheme: IconThemeData(color: Colors.black),
         backgroundColor: const Color.fromARGB(255, 255, 250, 250),
         title: Text(''),
         elevation: 0.0,
