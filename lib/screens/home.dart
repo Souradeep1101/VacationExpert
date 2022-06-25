@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:vacation_expert/screens/creative.dart';
 import 'package:vacation_expert/screens/research_content.dart';
 import 'package:vacation_expert/screens/trending.dart';
@@ -86,22 +87,22 @@ class _HomeState extends State<Home> {
             children:  [
               Text(
                   'What would you plan to do',
-                  style: TextStyle(
-                    fontFamily: 'Segoe_UI',
+                  style: GoogleFonts.quicksand(
                     fontSize: 18,
+                    letterSpacing: 2,
                   ),
               ),
-              Text(
+               Text(
                   'this Summer?',
-                  style: TextStyle(
-                    fontFamily: 'Segoe_UI_Semi_Bold',
+                  style: GoogleFonts.kaushanScript(
+                    fontSize: 18,
                     color: Colors.amber,
                     fontWeight: FontWeight.bold,
-                    fontSize: 18,
+                    letterSpacing: 2
                   ),
               ),
               SizedBox(height: 30,),
-              Text('Trending', style: TextStyle(fontSize: 14),),
+              Text('Trending', style: GoogleFonts.lato(fontSize: 14, fontWeight: FontWeight.bold),),
               SizedBox(height: 20,),
               Padding(
                 padding: const EdgeInsets.only(right: 30),
@@ -130,7 +131,7 @@ class _HomeState extends State<Home> {
                   ),
               ),
               SizedBox(height: 20,),
-              Text('Categories', style: TextStyle(fontSize: 14),),
+              Text('Categories', style: GoogleFonts.lato(fontSize: 14, fontWeight: FontWeight.bold),),
               SizedBox(height: 20,),
               Container(
                 width: 315,
@@ -178,7 +179,7 @@ class _HomeState extends State<Home> {
                               },
                             icon: Icon(Icons.lightbulb_outline, size: 30,),
                           ),
-                          Text('Creative', style: TextStyle(fontSize: 12),),
+                          Text('Creative', style: GoogleFonts.lato(fontSize: 12, fontWeight: FontWeight.bold),),
                         ],
                       ),
                     ),
@@ -219,7 +220,7 @@ class _HomeState extends State<Home> {
                             },
                             icon: Icon(Icons.person_outline, size: 30,),
                           ),
-                          Text('Enjoy Alone', style: TextStyle(fontSize: 12),),
+                          Text('Enjoy Alone', style: GoogleFonts.lato(fontSize: 12, fontWeight: FontWeight.bold),),
                         ],
                       ),
                     ),
@@ -260,7 +261,7 @@ class _HomeState extends State<Home> {
                             },
                             icon: Icon(Icons.people_alt_outlined, size: 30,),
                           ),
-                          Text('Enjoy With Friends', style: TextStyle(fontSize: 12),),
+                          Text('Enjoy With Friends', style: GoogleFonts.lato(fontSize: 12, fontWeight: FontWeight.bold),),
                         ],
                       ),
                     ),
@@ -308,9 +309,7 @@ class _HomeState extends State<Home> {
                         child: Padding(
                           padding: const EdgeInsets.only(top: 15, left: 10),
                           child: Text('According to new research,          summer is the best time to enjoy       life\'s simple pleasures.',
-                          style: TextStyle(
-                            fontSize: 20,
-                          )
+                          style: GoogleFonts.robotoCondensed(fontSize: 20, fontWeight: FontWeight.bold),
                           ),
                         ),
                       ),
@@ -321,9 +320,7 @@ class _HomeState extends State<Home> {
                             padding: const EdgeInsets.only(bottom: 5, left: 10),
                             child: TextButton(
                               child: Text('Click to know more...',
-                                  style: TextStyle(
-                                      fontStyle: FontStyle.italic
-                                  )),
+                                  style: GoogleFonts.lato(fontStyle: FontStyle.italic),),
                               onPressed: () {
                                 Navigator.push(
                                   context,
