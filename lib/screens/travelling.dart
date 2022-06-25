@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:vacation_expert/models/enjoy_with_friends/enjoy_with_friends.dart';
+import 'package:vacation_expert/models/enjoy_alone/travelling/travelling.dart';
 
-class EnjoyWithFriends extends StatefulWidget {
-  const EnjoyWithFriends({Key? key}) : super(key: key);
+class Travelling extends StatefulWidget {
+  const Travelling({Key? key}) : super(key: key);
 
   @override
-  State<EnjoyWithFriends> createState() => _EnjoyWithFriendsState();
+  State<Travelling> createState() => _TravellingState();
 }
 
-class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
+class _TravellingState extends State<Travelling> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,14 +24,14 @@ class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
             padding: EdgeInsets.only(left: 20, right: 20,),
             children: [
               Text(
-                'Good times and amazing friends gives',
+                'Let\'s do some',
                 style: GoogleFonts.quicksand(
                   fontSize: 18,
                   letterSpacing: 2,
                 ),
               ),
               Text(
-                'Amazing Memories!',
+                'Travelling',
                 style: GoogleFonts.kaushanScript(
                     fontSize: 18,
                     color: Colors.amber,
@@ -47,7 +47,7 @@ class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
                   //color: Colors.blue,
                 ),
                 child: ListView.builder(
-                  itemCount: enjoyment.length,
+                  itemCount: traveler.length,
                   itemBuilder: (context, index) {
                     return Column(
                       //mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -59,13 +59,13 @@ class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25),
                               image: DecorationImage(
-                                image: AssetImage(enjoyment[index].imageUrl),
+                                image: AssetImage(traveler[index].imageUrl),
                                 fit: BoxFit.cover,
                               ),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.only(top: 150, left: 10,),
-                              child: Text(enjoyment[index].idea,
+                              child: Text(traveler[index].idea,
                                 style: GoogleFonts.roboto(
                                   fontSize: 19,
                                   color: Colors.white,
@@ -76,7 +76,7 @@ class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
                           onTap: () {
                             Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => enjoyment[index].route,
+                                MaterialPageRoute(builder: (context) => traveler[index].route,
                                 )
                             );
                           },

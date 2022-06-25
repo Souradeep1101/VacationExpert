@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:vacation_expert/models/enjoy_with_friends/enjoy_with_friends.dart';
 
-class EnjoyWithFriends extends StatefulWidget {
-  const EnjoyWithFriends({Key? key}) : super(key: key);
+import '../models/enjoy_alone/cooking/cooking.dart';
+
+class Cooking extends StatefulWidget {
+  const Cooking({Key? key}) : super(key: key);
 
   @override
-  State<EnjoyWithFriends> createState() => _EnjoyWithFriendsState();
+  State<Cooking> createState() => _CookingState();
 }
 
-class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
+class _CookingState extends State<Cooking> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,14 +25,14 @@ class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
             padding: EdgeInsets.only(left: 20, right: 20,),
             children: [
               Text(
-                'Good times and amazing friends gives',
+                'Let\'s do some',
                 style: GoogleFonts.quicksand(
                   fontSize: 18,
                   letterSpacing: 2,
                 ),
               ),
               Text(
-                'Amazing Memories!',
+                'Cooking',
                 style: GoogleFonts.kaushanScript(
                     fontSize: 18,
                     color: Colors.amber,
@@ -47,7 +48,7 @@ class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
                   //color: Colors.blue,
                 ),
                 child: ListView.builder(
-                  itemCount: enjoyment.length,
+                  itemCount: foodie.length,
                   itemBuilder: (context, index) {
                     return Column(
                       //mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -59,13 +60,13 @@ class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25),
                               image: DecorationImage(
-                                image: AssetImage(enjoyment[index].imageUrl),
+                                image: AssetImage(foodie[index].imageUrl),
                                 fit: BoxFit.cover,
                               ),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.only(top: 150, left: 10,),
-                              child: Text(enjoyment[index].idea,
+                              child: Text(foodie[index].idea,
                                 style: GoogleFonts.roboto(
                                   fontSize: 19,
                                   color: Colors.white,
@@ -76,7 +77,7 @@ class _EnjoyWithFriendsState extends State<EnjoyWithFriends> {
                           onTap: () {
                             Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => enjoyment[index].route,
+                                MaterialPageRoute(builder: (context) => foodie[index].route,
                                 )
                             );
                           },

@@ -109,7 +109,7 @@ class _HomeState extends State<Home> {
                 child: Container(
                   //  padding: EdgeInsets.only(right: 30),
                     width: 315,
-                    height: 98,
+                    height: 110,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       image: DecorationImage(
@@ -143,97 +143,16 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.only(bottom: 10, left: 5),
                   scrollDirection: Axis.horizontal,
                   children: [
-                    Container(
-                      width: 130,
-                      height: 80,
-                      decoration: BoxDecoration(
-                        //color: Colors.red,
-                        borderRadius: BorderRadius.circular(25),
-                        border: Border.all(
-                          color: Colors.amber,
-                          width: 1
-                        ),
-                        boxShadow: [
-                          BoxShadow(
+                    GestureDetector(
+                      child: Container(
+                        width: 130,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          //color: Colors.red,
+                          borderRadius: BorderRadius.circular(25),
+                          border: Border.all(
                             color: Colors.amber,
-                            offset: Offset(0,5),
-                            blurRadius: 6,
-                          ),
-                          BoxShadow(
-                            color: Colors.white,
-                            offset: const Offset(0.0, 0.0),
-                            blurRadius: 0.0,
-                            spreadRadius: 0.0,
-                          ),
-                        ]
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          IconButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                  MaterialPageRoute(builder: (context) => const Creative()),
-                                );
-                              },
-                            icon: Icon(Icons.lightbulb_outline, size: 30,),
-                          ),
-                          Text('Creative', style: GoogleFonts.lato(fontSize: 12, fontWeight: FontWeight.bold),),
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 25,),
-                    Container(
-                      width: 130,
-                      height: 80,
-                      decoration: BoxDecoration(
-                          //color: Colors.red,
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                              color: Colors.amber,
-                              width: 1
-                          ),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.amber,
-                              offset: Offset(0,5),
-                              blurRadius: 6,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: const Offset(0.0, 0.0),
-                              blurRadius: 0.0,
-                              spreadRadius: 0.0,
-                            ),
-                          ],
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          IconButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => const EnjoyAlone()),
-                              );
-                            },
-                            icon: Icon(Icons.person_outline, size: 30,),
-                          ),
-                          Text('Enjoy Alone', style: GoogleFonts.lato(fontSize: 12, fontWeight: FontWeight.bold),),
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 25,),
-                    Container(
-                      width: 130,
-                      height: 80,
-                      decoration: BoxDecoration(
-                          //color: Colors.red,
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(
-                              color: Colors.amber,
-                              width: 1,
+                            width: 1
                           ),
                           boxShadow: [
                             BoxShadow(
@@ -248,22 +167,103 @@ class _HomeState extends State<Home> {
                               spreadRadius: 0.0,
                             ),
                           ]
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Icon(Icons.lightbulb_outline, size: 30,),
+                            Text('Creative', style: GoogleFonts.lato(fontSize: 12, fontWeight: FontWeight.bold),),
+                          ],
+                        ),
                       ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          IconButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => const EnjoyWithFriends()),
-                              );
-                            },
-                            icon: Icon(Icons.people_alt_outlined, size: 30,),
-                          ),
-                          Text('Enjoy With Friends', style: GoogleFonts.lato(fontSize: 12, fontWeight: FontWeight.bold),),
-                        ],
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Creative()),
+                      );
+                    },
+                    ),
+                    SizedBox(width: 25,),
+                    GestureDetector(
+                      child: Container(
+                        width: 130,
+                        height: 80,
+                        decoration: BoxDecoration(
+                            //color: Colors.red,
+                            borderRadius: BorderRadius.circular(25),
+                            border: Border.all(
+                                color: Colors.amber,
+                                width: 1
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.amber,
+                                offset: Offset(0,5),
+                                blurRadius: 6,
+                              ),
+                              BoxShadow(
+                                color: Colors.white,
+                                offset: const Offset(0.0, 0.0),
+                                blurRadius: 0.0,
+                                spreadRadius: 0.0,
+                              ),
+                            ],
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                              Icon(Icons.person_outline, size: 30,),
+                            Text('Enjoy Alone', style: GoogleFonts.lato(fontSize: 12, fontWeight: FontWeight.bold),),
+                          ],
+                        ),
                       ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const EnjoyAlone()),
+                        );
+                      },
+                    ),
+                    SizedBox(width: 25,),
+                    GestureDetector(
+                      child: Container(
+                        width: 130,
+                        height: 80,
+                        decoration: BoxDecoration(
+                            //color: Colors.red,
+                            borderRadius: BorderRadius.circular(25),
+                            border: Border.all(
+                                color: Colors.amber,
+                                width: 1,
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.amber,
+                                offset: Offset(0,5),
+                                blurRadius: 6,
+                              ),
+                              BoxShadow(
+                                color: Colors.white,
+                                offset: const Offset(0.0, 0.0),
+                                blurRadius: 0.0,
+                                spreadRadius: 0.0,
+                              ),
+                            ]
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                          Icon(Icons.people_alt_outlined, size: 30,),
+                            Text('Enjoy With Friends', style: GoogleFonts.lato(fontSize: 12, fontWeight: FontWeight.bold),),
+                          ],
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const EnjoyWithFriends()),
+                        );
+                      },
                     ),
                   ],
                 )

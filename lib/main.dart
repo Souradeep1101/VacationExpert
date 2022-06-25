@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:vacation_expert/screens/creative.dart';
+import 'package:vacation_expert/screens/enjoy_alone.dart';
+import 'package:vacation_expert/screens/enjoy_with_friends.dart';
 import 'package:vacation_expert/screens/home.dart';
+import 'package:vacation_expert/screens/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +30,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.amber,
         scaffoldBackgroundColor: const Color.fromARGB(255, 255, 250, 250),
       ),
-      home: Creative(),
+      home: Splash(),
     );
   }
 }

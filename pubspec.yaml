@@ -62,10 +62,12 @@ flutter:
   assets:
     - assets/images/creative/
     - assets/images/creative/tye_die_t-shirts.jpg
-    - assets/images/enjoy_alone/
+    - assets/images/enjoy_alone/cooking/
+    - assets/images/enjoy_alone/travelling/
     - assets/images/enjoy_with_friends/
     - assets/images/trending/
     - assets/images/
+    - assets/images/splash_logo.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
