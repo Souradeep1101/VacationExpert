@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vacation_expert/screens/about.dart';
 import 'package:vacation_expert/screens/creative.dart';
 import 'package:vacation_expert/screens/research_content.dart';
-import 'package:vacation_expert/screens/trending.dart';
+import 'package:vacation_expert/screens/hot_picks.dart';
 import 'package:vacation_expert/screens/enjoy_alone.dart';
 import 'package:vacation_expert/screens/enjoy_with_friends.dart';
 
@@ -30,25 +31,21 @@ class _HomeState extends State<Home> {
             const DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.amber,
+                image: DecorationImage(image: AssetImage('assets/images/splash_logo.png',), fit: BoxFit.cover),
               ),
-              child: Text('Drawer Header'),
+              child: Text(''),
             ),
             ListTile(
-              title: const Text('Item 1'),
+              title: const Text('About this Project'),
               onTap: () {
                 // Update the state of the app
                 // ...
                 // Then close the drawer
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: const Text('Item 2'),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => About(),
+                    )
+                );
               },
             ),
           ],
@@ -102,7 +99,7 @@ class _HomeState extends State<Home> {
                   ),
               ),
               SizedBox(height: 30,),
-              Text('Trending', style: GoogleFonts.lato(fontSize: 16, fontWeight: FontWeight.bold),),
+              Text('Hot Ideas', style: GoogleFonts.lato(fontSize: 16, fontWeight: FontWeight.bold),),
               SizedBox(height: 20,),
               Padding(
                 padding: const EdgeInsets.only(right: 30),
@@ -124,7 +121,7 @@ class _HomeState extends State<Home> {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const Trending()),
+                            MaterialPageRoute(builder: (context) => const HotPicks()),
                           );
                         }
                     ),

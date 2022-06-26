@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:vacation_expert/models/creative/creative.dart';
-import 'package:vacation_expert/screens/trending.dart';
+import 'package:vacation_expert/screens/hot_picks.dart';
 
 class Creative extends StatefulWidget {
   const Creative({Key? key}) : super(key: key);

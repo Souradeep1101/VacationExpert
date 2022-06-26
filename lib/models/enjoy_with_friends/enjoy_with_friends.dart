@@ -15,10 +15,7 @@ class EnjoyWithFriends{
 }
 
 List<EnjoyWithFriends> enjoyment = [
-  EnjoyWithFriends(imageUrl: 'assets/images/enjoy_with_friends/swimming_pool.jpg', idea: 'Set Up a Pool', route: Pool()),
-  EnjoyWithFriends(imageUrl: 'assets/images/enjoy_with_friends/picnic.jpg', idea: 'Have a Picnic', route: Picnic()),
   EnjoyWithFriends(imageUrl: 'assets/images/enjoy_with_friends/amusement_park.jpg', idea: 'Go to an Amusement Park', route: Park()),
   EnjoyWithFriends(imageUrl: 'assets/images/enjoy_with_friends/road_trip.jpg', idea: 'Take a Road Trip', route: RoadTrip()),
-  EnjoyWithFriends(imageUrl: 'assets/images/enjoy_with_friends/drive_in_theater.jpg', idea: 'Go to a Drive-in Movie', route: Movie()),
   EnjoyWithFriends(imageUrl: 'assets/images/enjoy_with_friends/beach.jpg', idea: 'Visit the Beach', route: Beach()),
 ];

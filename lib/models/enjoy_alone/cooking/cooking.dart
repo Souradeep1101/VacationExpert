@@ -15,6 +15,4 @@ class Cooking{
 List<Cooking> foodie = [
   Cooking(imageUrl: 'assets/images/enjoy_alone/cooking/grill_out.jpg', idea: 'Grill Out', route: GrillOut()),
   Cooking(imageUrl: 'assets/images/enjoy_alone/cooking/make_smores.jpg', idea: 'Make S’mores', route: Smores()),
-  Cooking(imageUrl: 'assets/images/enjoy_alone/cooking/make_ice_cream.jpg', idea: 'Make Ice-Cream', route: IceCream()),
-  Cooking(imageUrl: 'assets/images/enjoy_alone/cooking/make_lemonade.jpg', idea: 'Make Lemonade', route: Lemonade()),
 ];

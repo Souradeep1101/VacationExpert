@@ -1,9 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:vacation_expert/screens/Balloon.dart';
+import 'package:vacation_expert/screens/beach.dart';
 import 'package:vacation_expert/screens/creative.dart';
 import 'package:vacation_expert/screens/enjoy_alone.dart';
 import 'package:vacation_expert/screens/enjoy_with_friends.dart';
+import 'package:vacation_expert/screens/grill_out.dart';
+import 'package:vacation_expert/screens/hike.dart';
 import 'package:vacation_expert/screens/home.dart';
+import 'package:vacation_expert/screens/ice_pops.dart';
+import 'package:vacation_expert/screens/kindness.dart';
+import 'package:vacation_expert/screens/park.dart';
+import 'package:vacation_expert/screens/research_content.dart';
+import 'package:vacation_expert/screens/road_trip.dart';
+import 'package:vacation_expert/screens/smores.dart';
 import 'package:vacation_expert/screens/splash.dart';
+import 'package:vacation_expert/screens/sprinkler.dart';
+import 'package:vacation_expert/screens/stars.dart';
+import 'package:vacation_expert/screens/surf.dart';
+import 'package:vacation_expert/screens/tie_dye.dart';
 
 void main() {
   runApp(const MyApp());
